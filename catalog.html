@@ -6,10 +6,10 @@
   </head>
   <body>
     <header>
+      <a href="index.html">
+        <img src="img/logo.svg" width="154" height="64" alt="Логотип интернет-магазина мороженого «Глейси»">
+      </a>
       <nav>
-        <a href="index.html">
-          <img src="img/logo.svg" width="154" height="64" alt="Логотип интернет-магазина мороженого «Глейси»">
-        </a>
         <ul>
           <li><a href="catalog.html">Каталог</a>
             <ul>
@@ -23,69 +23,76 @@
           <li><a href="pay.html">Доставка и оплата</a></li>
           <li><a href="about.html">О Компании</a></li>
         </ul>
-        <div>
-          <button type="button">Поиск</button>
+      </nav>
+      <div>
+        <button type="button">Поиск</button>
+
+        <section>
+          <h2 class="visually-hidden">Поиск</h2>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden" for="search-input">Что ищем?</label>
+            <input id="search-input" type="text" name="search" placeholder="Крем-брюле">
+          </form>
+        </section>
+      </div>
+      <ul>
+        <li>
+          <a href="login.html">Вход</a>
 
           <section>
-            <h2 class="visually-hidden">Поиск</h2>
-            <form action="https://echo.htmlacademy.ru" method="get">
-              <label class="visually-hidden" for="search-input">Что ищем?</label>
-              <input id="search-input" type="text" name="search" placeholder="Крем-брюле">
+            <h2 class="visually-hidden">Личный кабинет</h2>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden" for="user-login">Логин</label>
+                <input id="user-login" type="email" name="login" placeholder="email@example.com">
+              </p>
+              <p>
+                <label class="visually-hidden" for="user-password">Пароль</label>
+                <input id="user-password" type="password" name="password" placeholder="••••••••">
+              </p>
+              <p>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </p>
+              <button type="submit">Войти</button>
             </form>
           </section>
-        </div>
-        <ul>
-          <li>
-            <a href="login.html">Вход</a>
+        </li>
+      </ul>
+      <div>
+        <a href="basket.html">2 товара</a>
 
-            <section>
-              <h2 class="visually-hidden">Личный кабинет</h2>
-              <form action="https://echo.htmlacademy.ru" method="post">
-                <p>
-                  <label class="visually-hidden" for="user-login">Логин</label>
-                  <input id="user-login" type="email" name="login" placeholder="email@example.com">
-                </p>
-                <p>
-                  <label class="visually-hidden" for="user-password">Пароль</label>
-                  <input id="user-password" type="password" name="password" placeholder="••••••••">
-                </p>
-                <p>
-                  <a href="#">Забыли пароль?</a>
-                  <a href="#">Новая регистрация</a>
-                </p>
-                <button type="submit">Войти</button>
-              </form>
-            </section>
-          </li>
-        </ul>
-        <div>
-          <button type="button">2 товара</button>
-
-          <section>
-            <h2 class="visually-hidden">Корзина</h2>
-            <table>
-              <tr>
-                <td><button type="button">Удалить</button></td>
-                <td><img src="img/product-small-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-                <td>Пломбир с апельсиновым джемом</td>
-                <td>1,5 кг х <span>200 руб.</span></td>
-                <td>300 руб.</td>
-              </tr>
-              <tr>
-                <td><button type="button">Удалить</button></td>
-                <td><img src="img/product-small-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td>1,5 кг х <span>300 руб.</span></td>
-                <td>450 руб.</td>
-              </tr>
-              <tr>
-                <td colspan="5">Итого: <span>750</span>руб.</td>
-              </tr>
-            </table>
-            <a href="#">Оформить заказ</a>
-          </section>
-        </div>
-      </nav>
+        <section>
+          <h2 class="visually-hidden">Корзина</h2>
+          <table>
+            <tr>
+              <td><button type="button">Удалить</button></td>
+              <td><img src="img/product-small-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+              <td>Пломбир с апельсиновым джемом</td>
+              <td>1,5 кг х <span>200 руб.</span></td>
+              <td>300 руб.</td>
+            </tr>
+            <tr>
+              <td><button type="button">Удалить</button></td>
+              <td><img src="img/product-small-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+              <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td>1,5 кг х <span>300 руб.</span></td>
+              <td>450 руб.</td>
+            </tr>
+            <tr>
+              <td colspan="5">Итого: <span>750</span>руб.</td>
+            </tr>
+          </table>
+          <a href="#">Оформить заказ</a>
+        </section>
+      </div>
+      <section>
+        <h2 class="visually-hidden">Контакты</h2>
+        <p>
+          С 10 до 20, ежедневно<br>
+          <a href="88124502525">8 812 450-25-25</a>
+        </p>
+      </section>
     </header>
 
     <main>
@@ -94,14 +101,6 @@
         <li><a href="catalog.html">Каталог</a></li>
         <li>Сливочное</li>
       </ul>
-
-      <section>
-        <h2 class="visually-hidden">Контакты</h2>
-        <p>
-          С 10 до 20, ежедневно<br>
-          <a href="88124502525">8 812 450-25-25</a>
-        </p>
-      </section>
 
       <h1>Сливочное мороженое</h1>
 

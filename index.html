@@ -6,10 +6,10 @@
   </head>
   <body>
     <header>
+      <a>
+        <img src="img/logo.svg" width="154" height="64" alt="Логотип интернет-магазина мороженого «Глейси»">
+      </a>
       <nav>
-        <a>
-          <img src="img/logo.svg" width="154" height="64" alt="Логотип интернет-магазина мороженого «Глейси»">
-        </a>
         <ul>
           <li><a href="catalog.html">Каталог</a>
             <ul>
@@ -23,50 +23,45 @@
           <li><a href="pay.html">Доставка и оплата</a></li>
           <li><a href="about.html">О Компании</a></li>
         </ul>
-        <div>
-          <button type="button">Поиск</button>
+      </nav>
+      <div>
+        <button type="button">Поиск</button>
+
+        <section>
+          <h2 class="visually-hidden">Поиск</h2>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden" for="search-input">Что ищем?</label>
+            <input id="search-input" type="text" name="search" placeholder="Крем-брюле">
+          </form>
+        </section>
+      </div>
+      <ul>
+        <li>
+          <a href="login.html">Вход</a>
 
           <section>
-            <h2 class="visually-hidden">Поиск</h2>
-            <form action="https://echo.htmlacademy.ru" method="get">
-              <label class="visually-hidden" for="search-input">Что ищем?</label>
-              <input id="search-input" type="text" name="search" placeholder="Крем-брюле">
+            <h2 class="visually-hidden">Личный кабинет</h2>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden" for="user-login">Логин</label>
+                <input id="user-login" type="email" name="login" placeholder="email@example.com">
+              </p>
+              <p>
+                <label class="visually-hidden" for="user-password">Пароль</label>
+                <input id="user-password" type="password" name="password" placeholder="••••••••">
+              </p>
+              <p>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </p>
+              <button type="submit">Войти</button>
             </form>
           </section>
-        </div>
-        <ul>
-          <li>
-            <a href="login.html">Вход</a>
-
-            <section>
-              <h2 class="visually-hidden">Личный кабинет</h2>
-              <form action="https://echo.htmlacademy.ru" method="post">
-                <p>
-                  <label class="visually-hidden" for="user-login">Логин</label>
-                  <input id="user-login" type="email" name="login" placeholder="email@example.com">
-                </p>
-                <p>
-                  <label class="visually-hidden" for="user-password">Пароль</label>
-                  <input id="user-password" type="password" name="password" placeholder="••••••••">
-                </p>
-                <p>
-                  <a href="#">Забыли пароль?</a>
-                  <a href="#">Новая регистрация</a>
-                </p>
-                <button type="submit">Войти</button>
-              </form>
-            </section>
-          </li>
-        </ul>
-        <div>
-          <button type="button">Пусто</button>
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <h1 class="visually-hidden">Интернет-магазин мороженого «Глейси»</h1>
-
+        </li>
+      </ul>
+      <div>
+        <a href="basket.html">Пусто</a>
+      </div>
       <section>
         <h2 class="visually-hidden">Контакты</h2>
         <p>
@@ -74,6 +69,10 @@
           <a href="tel:88124502525">8 812 450-25-25</a>
         </p>
       </section>
+    </header>
+
+    <main>
+      <h1 class="visually-hidden">Интернет-магазин мороженого «Глейси»</h1>
 
       <section>
         <h2 class="visually-hidden">Слайдер</h2>
