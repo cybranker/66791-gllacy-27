@@ -27,17 +27,34 @@
           <button type="button">Поиск</button>
 
           <section>
-            <h2>Поиск</h2>
-            <!-- Здесь будет форма -->
+            <h2 class="visually-hidden">Поиск</h2>
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <label class="visually-hidden" for="search-input">Что ищем?</label>
+              <input id="search-input" type="text" name="search" placeholder="Крем-брюле">
+            </form>
           </section>
         </div>
         <ul>
           <li>
-            <button type="button">Вход</button>
+            <a href="login.html">Вход</a>
 
             <section>
-              <h2>Личный кабинет</h2>
-              <!-- Здесь будет форма -->
+              <h2 class="visually-hidden">Личный кабинет</h2>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                  <label class="visually-hidden" for="user-login">Логин</label>
+                  <input id="user-login" type="email" name="login" placeholder="email@example.com">
+                </p>
+                <p>
+                  <label class="visually-hidden" for="user-password">Пароль</label>
+                  <input id="user-password" type="password" name="password" placeholder="••••••••">
+                </p>
+                <p>
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </p>
+                <button type="submit">Войти</button>
+              </form>
             </section>
           </li>
         </ul>
@@ -45,7 +62,7 @@
           <button type="button">2 товара</button>
 
           <section>
-            <h2>Корзина</h2>
+            <h2 class="visually-hidden">Корзина</h2>
             <table>
               <tr>
                 <td><button type="button">Удалить</button></td>

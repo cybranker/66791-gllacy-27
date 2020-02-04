@@ -27,17 +27,34 @@
           <button type="button">Поиск</button>
 
           <section>
-            <h2>Поиск</h2>
-            <!-- Здесь будет форма -->
+            <h2 class="visually-hidden">Поиск</h2>
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <label class="visually-hidden" for="search-input">Что ищем?</label>
+              <input id="search-input" type="text" name="search" placeholder="Крем-брюле">
+            </form>
           </section>
         </div>
         <ul>
           <li>
-            <button type="button">Вход</button>
+            <a href="login.html">Вход</a>
 
             <section>
-              <h2>Личный кабинет</h2>
-              <!-- Здесь будет форма -->
+              <h2 class="visually-hidden">Личный кабинет</h2>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                  <label class="visually-hidden" for="user-login">Логин</label>
+                  <input id="user-login" type="email" name="login" placeholder="email@example.com">
+                </p>
+                <p>
+                  <label class="visually-hidden" for="user-password">Пароль</label>
+                  <input id="user-password" type="password" name="password" placeholder="••••••••">
+                </p>
+                <p>
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </p>
+                <button type="submit">Войти</button>
+              </form>
             </section>
           </li>
         </ul>
@@ -145,7 +162,7 @@
       </section>
 
       <section>
-        <h2>Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
         <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
         <ul>
           <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
@@ -165,7 +182,7 @@
       </article>
 
       <article>
-        <h2>Подписка</h2>
+        <h2 class="visually-hidden">Подписка</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <!-- Здесь будет форма -->
       </article>
@@ -214,7 +231,21 @@
 
     <section>
       <h2>Мы обязательно вам ответим!</h2>
-      <!-- Здесь будет форма -->
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="feedback-name">Имя Фамилия</label>
+          <input id="feedback-name" type="text" name="name" placeholder="Вася Пензенский">
+        </p>
+        <p>
+          <label class="visually-hidden" for="feedback-email">Email</label>
+          <input id="feedback-email" type="email" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label class="visually-hidden" for="feedback-description">Описание</label>
+          <textarea id="feedback-description" name="description" rows="5" placeholder="В свободной форме"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
       <button type="button">Закрыть</button>
     </section>
   </body>
