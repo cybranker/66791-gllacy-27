@@ -65,10 +65,10 @@
     </header>
 
     <main>
-      <h1>Интернет-магазин мороженого «Глейси»</h1>
+      <h1 class="visually-hidden">Интернет-магазин мороженого «Глейси»</h1>
 
       <section>
-        <h2>Контакты</h2>
+        <h2 class="visually-hidden">Контакты</h2>
         <p>
           С 10 до 20, ежедневно<br>
           <a href="tel:88124502525">8 812 450-25-25</a>
@@ -76,21 +76,21 @@
       </section>
 
       <section>
-        <h2>Слайдер</h2>
+        <h2 class="visually-hidden">Слайдер</h2>
         <div>
           <ul>
             <li>
-              <img src="img/slide-1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
+              <img src="img/slide-1.png" width="1045" height="881" alt="">
               <h3>Крем-брюле и пломбир с малиновым джемом</h3>
               <a href="#">Давайте оба!</a>
             </li>
             <li>
-              <img src="img/slide-2.png" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет">
+              <img src="img/slide-2.png" width="1065" height="859" alt="">
               <h3>Шоколадный пломбир и лимонный сорбет</h3>
               <a href="#">Давайте оба!</a>
             </li>
             <li>
-              <img src="img/slide-3.png" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет">
+              <img src="img/slide-3.png" width="1079" height="854" alt="">
               <h3>Пломбир с помадкой и клубничный щербет</h3>
               <a href="#">Давайте оба!</a>
             </li>
@@ -104,7 +104,7 @@
       </section>
 
       <section>
-        <h2>Специальные предложения</h2>
+        <h2 class="visually-hidden">Специальные предложения</h2>
         <ul>
           <li>
             <h2>Малинка даром!</h2>
@@ -120,12 +120,12 @@
       </section>
 
       <section>
-        <h2>Хиты продаж</h2>
+        <h2 class="visually-hidden">Хиты продаж</h2>
         <ul>
           <li>
             <a href="#">
               <div>
-                <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <img src="img/product-1.jpg" width="267" height="267" alt="">
                 <span><span>310 ₽</span>/кг</span>
               </div>
               <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
@@ -134,7 +134,7 @@
           <li>
             <a href="#">
               <div>
-                <img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+                <img src="img/product-2.jpg" width="267" height="267" alt="">
                 <span><span>380 ₽</span>/кг</span>
               </div>
               <h3>Сливочно-кофейное с кусочками шоколада</h3>
@@ -143,7 +143,7 @@
           <li>
             <a href="#">
               <div>
-                <img src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                <img src="img/product-3.jpg" width="267" height="267" alt="">
                 <span><span>355 ₽</span>/кг</span>
               </div>
               <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
@@ -152,7 +152,7 @@
           <li>
             <a href="#">
               <div>
-                <img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                <img src="img/product-4.jpg" width="267" height="267" alt="">
                 <span><span>415 ₽</span>/кг</span>
               </div>
               <h3>Сливочное крем-брюле с карамельной подливкой</h3>
@@ -184,11 +184,17 @@
       <article>
         <h2 class="visually-hidden">Подписка</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <!-- Здесь будет форма -->
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label class="visually-hidden" for="subscription-email">Email</label>
+            <input id="subscription-email" type="email" name="email" placeholder="email@example.com">
+          </p>
+          <button type="submit">Отправить</button>
+        </form>
       </article>
 
       <section>
-        <h2>Как до нас добраться</h2>
+        <h2 class="visually-hidden">Как до нас добраться</h2>
         <img src="img/map.jpg" width="1200" height="430" alt="Карта офиса по адресу улица Большая Конюшенная, 19/8, Санкт-Петербург">
         <address>
             <p>
