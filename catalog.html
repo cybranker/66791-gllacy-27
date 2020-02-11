@@ -143,22 +143,22 @@
             <ul>
               <li class="filter-option">
                 <label>
-                  <input type="radio" name="product-group" value="0"> 0%
+                  <input class="filter-input filter-input-radio" type="radio" name="product-group" value="0"> 0%
                 </label>
               </li>
               <li class="filter-option">
                 <label>
-                  <input type="radio" name="product-group" value="10" checked> до 10%
+                  <input class="filter-input filter-input-radio" type="radio" name="product-group" value="10" checked> до 10%
                 </label>
               </li>
               <li class="filter-option">
                 <label>
-                  <input type="radio" name="product-group" value="30"> до 30%
+                  <input class="filter-input filter-input-radio" type="radio" name="product-group" value="30"> до 30%
                 </label>
               </li>
               <li class="filter-option">
                 <label>
-                  <input type="radio" name="product-group" value="30+"> выше 30%
+                  <input class="filter-input filter-input-radio" type="radio" name="product-group" value="30+"> выше 30%
                 </label>
               </li>
             </ul>
@@ -168,32 +168,32 @@
             <ul>
               <li class="filter-option">
                 <label>
-                  <input type="checkbox" name="chocolate" checked> шоколадные
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="chocolate" checked> шоколадные
                 </label>
               </li>
               <li class="filter-option">
                 <label>
-                  <input type="checkbox" name="sugar-powders" checked> сахарные присыпки
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="sugar-powders" checked> сахарные присыпки
                 </label>
               </li>
               <li class="filter-option">
                 <label>
-                  <input type="checkbox" name="fruit"> фрукты
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="fruit"> фрукты
                 </label>
               </li>
               <li class="filter-option">
                 <label>
-                  <input type="checkbox" name="syrups"> сиропы
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="syrups"> сиропы
                 </label>
               </li>
               <li class="filter-option">
                 <label>
-                  <input type="checkbox" name="jams"> джемы
+                  <input class="filter-input filter-input-checkbox" type="checkbox" name="jams"> джемы
                 </label>
               </li>
             </ul>
           </fieldset>
-          <button class="button" type="submit">Применить</button>
+          <button class="filter-button" type="submit">Применить</button>
         </form>
       </section>
 
@@ -322,6 +322,7 @@
           </li>
         </ul>
         <ol class="pagination-list">
+          <li class="pagination-item  pagination-item-disabled"><a>&lt;</a></li>
           <li class="pagination-item pagination-item-current"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
