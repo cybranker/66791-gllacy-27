@@ -190,6 +190,73 @@ input[type="email"]:focus {
   background-color: #f8f7f4;
 }
 
+.page-title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs li,
+.breadcrumbs a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-list a {
+  text-decoration: none;
+}
+
+.catalog-list a:hover,
+.catalog-list a:focus {
+  color: #ffffff;
+}
+
+.catalog-item:hover {
+  background-color: rgba(248, 247, 244, 0.2);
+  -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.catalog-item .catalog-item-price {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.catalog-item-price span {
+  font-size: 45px;
+}
+
+.catalog-item .catalog-item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.catalog-item .catalog-item-title:hover,
+.catalog-item .catalog-item-title:focus {
+  color: #ffbc9e;
+}
+
+.catalog-item .quick-view-button {
+  display: none;
+}
+
+.catalog-item:hover .quick-view-button {
+  display: inline-block;
+}
+
 .main-footer ul {
   list-style: none;
 }
