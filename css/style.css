@@ -174,14 +174,14 @@ input[type="email"]:focus {
 
 .raspberries-offer {
   background-color: #990019;
-  background-image: url("../img/crimson-bg.jpg");
+  background-image: url("../img/crimson-bg.png");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 
 .chocolate-offer {
   background-color: #492511;
-  background-image: url("../img/chocolate-bg.jpg");
+  background-image: url("../img/chocolate-bg.png");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
