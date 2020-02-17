@@ -153,6 +153,11 @@ input[type="email"]:focus {
 
 .main-search {
   margin-left: auto;
+  margin-right: 10px;
+}
+
+.main-header .user-nav {
+  margin-right: 10px ;
 }
 
 .contacts a {
