@@ -35,6 +35,11 @@ body {
   clip: rect(0 0 0 0);
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 a {
   font: inherit;
   color: #ffffff;
@@ -182,7 +187,14 @@ input[type="email"]:focus {
   color: #ffffff;
 }
 
+.slider {
+  margin-bottom: 40px;
+}
+
 .slider-slides {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -193,8 +205,20 @@ input[type="email"]:focus {
   color: #ffffff;
 }
 
+.special-offers {
+  margin-bottom: 40px;
+}
+
 .special-offers .index-columns {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.special-offer {
+  width: 560px;
+  min-height: 230px;
 }
 
 .special-offer-title {
@@ -352,6 +376,9 @@ input[type="email"]:focus {
 }
 
 .filters fieldset {
+  margin-right: 15px;
+  padding: 0;
+
   border: none;
 }
 
@@ -364,9 +391,36 @@ input[type="email"]:focus {
 }
 
 .filters ul {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.sorting-filter {
+  width: 193px;
+  margin: 0;
+  margin-right: 15px;
+}
+
+.price-filter {
+  width: 220px;
+}
+
+.fat-filter {
+  width: 415px;
+}
+
+.fillers-filter {
+  width: 700px;
 }
 
 .filter-option label {
@@ -479,6 +533,9 @@ input[type="email"]:focus {
 }
 
 .pagination-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
