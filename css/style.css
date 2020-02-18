@@ -310,10 +310,18 @@ input[type="email"]:focus {
   font-weight: 700;
   font-size: 35px;
   line-height: 41px;
+
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
 }
 
 .breadcrumbs {
   list-style: none;
+
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .breadcrumbs li,
@@ -321,6 +329,10 @@ input[type="email"]:focus {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+}
+
+.filters {
+  margin-bottom: 40px;
 }
 
 .filters fieldset {
@@ -379,7 +391,11 @@ input[type="email"]:focus {
 }
 
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-list a {
@@ -389,6 +405,16 @@ input[type="email"]:focus {
 .catalog-list a:hover,
 .catalog-list a:focus {
   color: #ffffff;
+}
+
+.catalog-item {
+  width: 267px;
+  margin-bottom: 40px;
+  margin-right: 25px;
+}
+
+.catalog-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .catalog-item:hover {
@@ -413,6 +439,8 @@ input[type="email"]:focus {
   line-height: 22px;
   text-align: center;
   text-decoration: underline;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-item-title:hover,
