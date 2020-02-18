@@ -2,10 +2,10 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400;
+  font-family: Roboto, Arial, sans-serif;
   color: #ffffff;
 
   background-color: #849d8f;
@@ -23,13 +23,16 @@ body {
 
 .visually-hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
-  clip: rect(0 0 0 0);
   overflow: hidden;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
 }
 
 a {
@@ -45,10 +48,11 @@ a:focus {
 input[type="text"],
 input[type="password"],
 input[type="email"] {
+  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 700;
   color: #323232;
+
   border: 1px solid #b2b2b2;
 }
 
@@ -67,16 +71,17 @@ input[type="email"]:focus {
 
 .button {
   font: inherit;
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  color: #ffffff;
-  font-weight: 700;
   vertical-align: middle;
   text-align: center;
+  color: #ffffff;
   text-decoration: none;
-  border: none;
+
   background-image: -webkit-gradient(linear, left bottom, left top, from(#e74a35), to(#f26843));
   background-image: linear-gradient(0deg, #e74a35, #f26843);
+  border: none;
   -webkit-box-shadow: 0 2px 2px rgba(85, 8, 0, 0.54);
           box-shadow: 0 2px 2px rgba(85, 8, 0, 0.54);
 }
@@ -84,6 +89,7 @@ input[type="email"]:focus {
 .button:hover,
 .button:focus {
   color: #ffffff;
+
   background-image: -webkit-gradient(linear, left bottom, left top, from(#f58669), to(#ec6f5e));
   background-image: linear-gradient(0deg, #f58669, #ec6f5e);
   -webkit-box-shadow: 0 2px 2px #ac1000;
@@ -92,6 +98,7 @@ input[type="email"]:focus {
 
 .button:active {
   color: #fceeec;
+
   background-image: -webkit-gradient(linear, left bottom, left top, from(#e74a35), to(#f26843));
   background-image: linear-gradient(0deg, #e74a35, #f26843);
   -webkit-box-shadow: inset 0 2px 2px #942718;
@@ -115,23 +122,25 @@ input[type="email"]:focus {
 }
 
 .main-nav {
+  font-weight: 700;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 700;
 }
 
 .main-header ul {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
 .main-header .button {
+  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 400;
   color: #ffffff;
   text-decoration: none;
+
   background-color: rgba(255, 255, 255, 0.2);
   background-image: none;
   border: none;
@@ -141,8 +150,9 @@ input[type="email"]:focus {
 
 .main-header .button:hover,
 .main-header .button:focus {
-  background-color: #f8f7f4;
   color: #323232;
+
+  background-color: #f8f7f4;
 }
 
 .contacts-text {
@@ -152,8 +162,8 @@ input[type="email"]:focus {
 }
 
 .main-search {
-  margin-left: auto;
   margin-right: 10px;
+  margin-left: auto;
 }
 
 .main-header .user-nav {
@@ -161,9 +171,9 @@ input[type="email"]:focus {
 }
 
 .contacts a {
+  font-weight: 700;
   font-size: 22px;
   line-height: 24px;
-  font-weight: 700;
   text-decoration: none;
 }
 
@@ -177,9 +187,9 @@ input[type="email"]:focus {
 }
 
 .slider-slides h3 {
+  font-weight: 700;
   font-size: 60px;
   line-height: 60px;
-  font-weight: 700;
   color: #ffffff;
 }
 
@@ -188,9 +198,9 @@ input[type="email"]:focus {
 }
 
 .special-offer-title {
+  font-weight: 700;
   font-size: 35px;
   line-height: 41px;
-  font-weight: 700;
 }
 
 .special-offer-text {
@@ -201,45 +211,46 @@ input[type="email"]:focus {
 .raspberries-offer {
   background-color: #990019;
   background-image: url("../img/crimson-bg.png");
-  background-position: 0 0;
   background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .chocolate-offer {
   background-color: #492511;
   background-image: url("../img/chocolate-bg.png");
-  background-position: 0 0;
   background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .features {
+  margin-bottom: 40px;
+  padding: 20px 27px;
+
   color: #323232;
 
   background-color: #efe3cb;
   background-image: url("../img/pattern-wafer.jpg");
-  background-position: 0 0;
   background-repeat: repeat;
-
-  padding: 20px 27px;
-  margin-bottom: 40px;
+  background-position: 0 0;
 }
 
 .features-text {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 500;
-
   margin: 0;
   margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .features-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .feature-item {
@@ -255,41 +266,46 @@ input[type="email"]:focus {
 .blog-news {
   width: 560px;
   min-height: 220px;
+
+  color: #323232;
+
   background-color: #ffffff;
   background-image: url("../img/strawberry-bg.jpg");
-  background-position: 100% 0%;
   background-repeat: no-repeat;
-  color: #323232;
+  background-position: 100% 0;
 }
 
 .blog-news-title {
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 500;
   color: #323232;
 }
 
 .blog-item a {
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  font-weight: 700;
   color: #323232;
 }
 
 .subscription {
   width: 550px;
   min-height: 210px;
+
   font-size: 16px;
   line-height: 22px;
   color: #5a5a5a;
+
   background-color: #f8f7f4;
   border: 5px solid #000000;
   border-image: url("../img/mailing-bg.jpg") 5 round round;
 }
 
 .map-address {
-  color: #323232;
   font-style: normal;
+  color: #323232;
+
   background-color: #ffffff;
 }
 
@@ -299,29 +315,29 @@ input[type="email"]:focus {
 }
 
 .map-contacts {
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   color: #323232;
-  font-weight: 700;
   text-decoration: none;
 }
 
 .page-title {
-  font-weight: 700;
-  font-size: 35px;
-  line-height: 41px;
-
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
+
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
 }
 
 .breadcrumbs {
-  list-style: none;
-
-  padding: 0;
   margin: 0;
   margin-bottom: 10px;
+  padding: 0;
+
+  list-style: none;
 }
 
 .breadcrumbs li,
@@ -341,14 +357,15 @@ input[type="email"]:focus {
 
 .filters legend,
 .filters label {
+  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 500;
   color: #ffffff;
 }
 
 .filters ul {
   list-style: none;
+
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -364,38 +381,42 @@ input[type="email"]:focus {
 
 .filter-button {
   font: inherit;
+  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  color: #ffffff;
-  font-weight: 500;
   vertical-align: middle;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
   text-decoration: none;
+
+  background-color: rgba(255, 255, 255, 0.2);
   border: 2px solid #ffffff;
 }
 
 .filter-button:hover,
 .filter-button:focus {
-  background-color: #ffffff;
   color: #323232;
+
+  background-color: #ffffff;
   outline: none;
 }
 
 .filter-button:active {
-  background-color: #ededed;
   color: #323232;
+
+  background-color: #ededed;
+  border: none;
   -webkit-box-shadow: inset 0 1px 2px #696969;
           box-shadow: inset 0 1px 2px #696969;
-  border: none;
 }
 
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .catalog-list a {
@@ -409,8 +430,8 @@ input[type="email"]:focus {
 
 .catalog-item {
   width: 267px;
-  margin-bottom: 40px;
   margin-right: 25px;
+  margin-bottom: 40px;
 }
 
 .catalog-item:nth-child(4n) {
@@ -434,13 +455,14 @@ input[type="email"]:focus {
 }
 
 .catalog-item-title {
+  margin: 0;
+  padding: 0;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
   text-align: center;
   text-decoration: underline;
-  margin: 0;
-  padding: 0;
 }
 
 .catalog-item-title:hover,
@@ -476,8 +498,9 @@ input[type="email"]:focus {
 .pagination-item-current a,
 .pagination-item-current a:hover,
 .pagination-item-current a:focus {
-  background-color: #ffffff;
   color: #323232;
+
+  background-color: #ffffff;
 }
 
 .pagination-item-disabled a {
@@ -486,8 +509,9 @@ input[type="email"]:focus {
 
 .pagination-item-disabled a:hover,
 .pagination-item-disabled a:focus {
-  background-color: transparent;
   color: #ffffff;
+
+  background-color: transparent;
 }
 
 .main-footer {
@@ -499,15 +523,16 @@ input[type="email"]:focus {
 }
 
 .main-footer ul {
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .main-footer a {
+  font-weight: 400;
   font-size: 13px;
   line-height: 18px;
-  font-weight: 400;
   color: #ffffff;
 }
 
@@ -527,9 +552,9 @@ input[type="email"]:focus {
 
 .footer-copyright,
 .footer-copyright a {
+  font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  font-weight: 400;
 }
 
 .footer-copyright {
