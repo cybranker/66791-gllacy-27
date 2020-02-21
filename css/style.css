@@ -107,9 +107,8 @@ input[type="email"]:focus {
   color: #ffffff;
 
   background-image: linear-gradient(0deg, #f58669, #ec6f5e);
-  box-shadow: 0 2px 2px #ac1000;
-
   outline: none;
+  box-shadow: 0 2px 2px #ac1000;
 }
 
 .button:active,
@@ -375,6 +374,7 @@ input[type="email"]:focus {
 .modal-search,
 .modal-login {
   position: absolute;
+  top: 37px;
   right: 0;
 
   display: block;
@@ -383,8 +383,6 @@ input[type="email"]:focus {
 }
 
 .modal-search {
-  top: 37px;
-
   width: 340px;
 }
 
@@ -395,8 +393,6 @@ input[type="email"]:focus {
 }
 
 .modal-login {
-  top: 32px;
-
   width: 280px;
 }
 
