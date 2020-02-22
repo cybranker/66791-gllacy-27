@@ -608,20 +608,28 @@ input[type="email"]:focus {
   box-sizing: border-box;
   width: 560px;
   min-height: 220px;
-  padding: 25px 20px;
+  padding: 5px;
 
   font-size: 16px;
   line-height: 22px;
   color: #5a5a5a;
 
-  background-color: #f8f7f4;
-  border: 5px solid #000000;
+  background-image: url("../img/mailing-bg.jpg");
+  background-repeat: repeat-y;
+  background-position: 0 0;
   border-radius: 15px;
-  -o-border-image: url("../img/mailing-bg.jpg") 5 round stretch;
-     border-image: url("../img/mailing-bg.jpg") 5 round stretch;
 }
 
-.subscription > p {
+.subscription-wrap {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 25px 20px;
+
+  background-color: #f8f7f4;
+  border-radius: 15px;
+}
+
+.subscription-wrap > p {
   margin-top: 5px;
   margin-bottom: 40px;
 }
