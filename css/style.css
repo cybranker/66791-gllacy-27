@@ -916,12 +916,89 @@ input[type="email"]:focus {
 }
 
 .main-footer .footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   width: 267px;
   margin-right: 130px;
 }
 
+.footer-social li {
+  margin-right: 10px;
+}
+
+.footer-social li:last-child {
+  margin-right: 0;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.social-button svg {
+  opacity: 0.8;
+}
+
+.social-button:hover,
+.social-button:active,
+.social-button:focus {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.social-button:hover svg {
+  opacity: 1;
+}
+
+.social-button:active {
+  box-shadow: 0 2px 1px #888888;
+}
+
+.social-button:active svg {
+  opacity: 0.9;
+}
+
 .footer-about {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
   width: 350px;
+}
+
+.footer-about li {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 145px;
+  margin-bottom: 5px;
+  padding-left: 20px;
+}
+
+.footer-about li:nth-child(2n) {
+  flex-grow: 1;
+}
+
+.footer-about .suppliers-link {
+  font-weight: 700;
+}
+
+.footer-about .suppliers-link::before {
+  content: url("../img/heart-icon.svg");
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 15px;
+  height: 13px;
+
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .footer-copyright,
