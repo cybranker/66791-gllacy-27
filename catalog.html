@@ -73,26 +73,38 @@
 
             <section class="modal modal-basket">
               <h2 class="visually-hidden">Корзина</h2>
-              <table>
-                <tr>
-                  <td><button type="button">Удалить</button></td>
-                  <td><img src="img/product-small-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+              <table class="modal-basket-table">
+                <col class="column-1">
+                <col class="column-2">
+                <col class="column-3">
+                <col class="column-4">
+                <tr class="basket-item">
+                  <td><button class="basket-item-delete" type="button"><span class="visually-hidden">Удалить</span></button></td>
+                  <td>
+                    <div class="basket-item-image">
+                      <img src="img/product-small-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                    </div>
+                  </td>
                   <td>Пломбир с апельсиновым джемом</td>
-                  <td>1,5 кг х <span>200 руб.</span></td>
+                  <td>1,5 кг х <span class="price-per-kilogram">200 руб.</span></td>
                   <td>300 руб.</td>
                 </tr>
-                <tr>
-                  <td><button type="button">Удалить</button></td>
-                  <td><img src="img/product-small-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                <tr class="basket-item">
+                  <td><button class="basket-item-delete" type="button"><span class="visually-hidden">Удалить</span></button></td>
+                  <td>
+                    <div class="basket-item-image">
+                      <img src="img/product-small-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                    </div>
+                  </td>
                   <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                  <td>1,5 кг х <span>300 руб.</span></td>
+                  <td>1,5 кг х <span class="price-per-kilogram">300 руб.</span></td>
                   <td>450 руб.</td>
                 </tr>
                 <tr>
-                  <td colspan="5">Итого: <span>750</span>руб.</td>
+                  <td class="basket-total" colspan="5">Итого: <span>750</span>руб.</td>
                 </tr>
               </table>
-              <a class="button" href="#">Оформить заказ</a>
+              <p class="basket-button-wrapper"><a class="button-form" href="#">Оформить заказ</a></p>
             </section>
           </div>
         </div>

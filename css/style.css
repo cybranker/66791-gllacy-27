@@ -214,7 +214,6 @@ textarea:focus {
   top: 30px;
   left: -5px;
 
-  display: block;
   box-sizing: border-box;
   min-width: 145px;
   padding: 10px;
@@ -309,10 +308,13 @@ textarea:focus {
 }
 
 .main-header .button::before {
+  content: "";
   position: absolute;
   top: 50%;
   left: 15px;
 
+  background-image: url("../img/sprite-icon.png");
+  background-repeat: no-repeat;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -321,31 +323,47 @@ textarea:focus {
   width: 32px;
   height: 32px;
   padding: 0;
+  cursor: pointer;
 }
 
 .main-header .search-button::before {
-  content: url("../img/search-icon.png");
   left: 50%;
 
   width: 17px;
   height: 17px;
 
+  background-position: -5px -35px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
-.login-button::before {
-  content: url("../img/sign-in-icon.png");
+.main-header .search-button:hover::before,
+.main-header .search-button:focus::before {
+  background-position: -32px -35px;
+}
 
+.login-button::before {
   width: 21px;
   height: 19px;
+
+  background-position: -67px -5px;
+}
+
+.login-button:hover::before,
+.login-button:focus::before {
+  background-position: -67px -34px;
 }
 
 .basket-button::before {
-  content: url("../img/basket-icon.png");
-
   width: 21px;
   height: 20px;
+
+  background-position: -5px -5px;
+}
+
+.basket-button:hover::before,
+.basket-button:focus::before {
+  background-position: -36px -5px;
 }
 
 .contacts-text {
@@ -374,7 +392,6 @@ textarea:focus {
   top: 37px;
   right: 0;
 
-  display: block;
   box-sizing: border-box;
   padding: 20px 15px;
 }
@@ -421,6 +438,118 @@ textarea:focus {
 .login-form .button-form {
   width: 100px;
   padding: 10px 25px;
+}
+
+.main-basket {
+  position: relative;
+}
+
+.modal-basket {
+  position: absolute;
+  top: 37px;
+  right: 0;
+
+  display: block;
+  box-sizing: border-box;
+  width: 540px;
+  padding: 10px 15px 20px;
+}
+
+.modal-basket-table {
+  width: 100%;
+
+  border-collapse: collapse;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.modal-basket-table td {
+  padding: 10px 10px 10px 0;
+
+  vertical-align: middle;
+}
+
+.modal-basket-table .column-1 {
+  width: 25px;
+}
+
+.modal-basket-table .column-2 {
+  width: 45px;
+}
+
+.modal-basket-table .column-3 {
+  width: 245px;
+}
+
+.modal-basket-table .column-4 {
+  width: 125px;
+}
+
+.basket-item-delete {
+  position: relative;
+
+  width: 11px;
+  height: 11px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.basket-item-delete::before,
+.basket-item-delete::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -1px;
+
+  width: 15px;
+  height: 1px;
+
+  background-color: #231f20;
+}
+
+.basket-item-delete::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.basket-item-delete::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.basket-item-image {
+  width: 33px;
+  height: 33px;
+  overflow: hidden;
+
+  border-radius: 100%;
+}
+
+.price-per-kilogram {
+  color: #999999;
+}
+
+.basket-item:nth-last-child(2) td {
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid #cacac7;
+}
+
+.modal-basket-table .basket-total {
+  padding: 12px 0;
+
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: right;
+}
+
+.basket-button-wrapper {
+  margin: 0;
+
+  text-align: right;
 }
 
 .contacts a {
@@ -1019,12 +1148,28 @@ textarea:focus {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.40);
 }
 
+.modal .button,
+.modal .button-form {
+  color: #ffffff;
+}
+
+.modal .button:hover,
+.modal .button:focus,
+.modal .button-form:hover,
+.modal .button-form:focus {
+  color: #ffffff;
+}
+
+.modal .button:active,
+.modal .button-form:active {
+  color: #fceeec;
+}
+
 .modal-feedback {
   position: fixed;
   top: 340px;
   left: 50%;
 
-  display: block;
   box-sizing: border-box;
   width: 475px;
   padding: 24px;
@@ -1088,6 +1233,7 @@ textarea:focus {
 .feedback-form p:last-child {
   margin-top: 25px;
   margin-bottom: 0;
+
   text-align: right;
 }
 
