@@ -1092,6 +1092,19 @@ textarea:focus {
 
 .main-footer .container {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.inner-page-footer .container {
+  position: relative;
+}
+
+.inner-page-footer .container::before {
+  content: "";
+  flex-basis: 100%;
+  flex-grow: 1;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .main-footer ul {
