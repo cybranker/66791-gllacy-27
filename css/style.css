@@ -219,6 +219,10 @@ textarea:focus {
   padding: 10px;
 }
 
+.site-nav-catalog-item:hover .modal-nav {
+  display: block;
+}
+
 .modal-nav li {
   margin-right: -10px;
   margin-left: -10px;
@@ -401,6 +405,10 @@ textarea:focus {
   width: 340px;
 }
 
+.search-button:hover + .modal-search {
+  display: block;
+}
+
 .main-header .user-nav {
   position: relative;
 
@@ -409,6 +417,10 @@ textarea:focus {
 
 .modal-login {
   width: 280px;
+}
+
+.login-button:hover + .modal-login {
+  display: block;
 }
 
 .login-form p {
@@ -453,6 +465,10 @@ textarea:focus {
   box-sizing: border-box;
   width: 540px;
   padding: 10px 15px 20px;
+}
+
+.basket-button:hover + .modal-basket {
+  display: block;
 }
 
 .modal-basket-table {
@@ -1103,6 +1119,8 @@ textarea:focus {
   content: "";
   flex-basis: 100%;
   flex-grow: 1;
+  position: relative;
+  top: -6px;
 
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -1254,7 +1272,7 @@ textarea:focus {
   position: fixed;
   top: 340px;
   left: 50%;
-
+  display: block;
   box-sizing: border-box;
   width: 475px;
   padding: 24px;
