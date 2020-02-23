@@ -323,6 +323,7 @@ textarea:focus {
   width: 32px;
   height: 32px;
   padding: 0;
+
   cursor: pointer;
 }
 
@@ -449,7 +450,6 @@ textarea:focus {
   top: 37px;
   right: 0;
 
-  display: block;
   box-sizing: border-box;
   width: 540px;
   padding: 10px 15px 20px;
@@ -802,6 +802,9 @@ textarea:focus {
 }
 
 .breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
@@ -814,6 +817,33 @@ textarea:focus {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+}
+
+.breadcrumbs li {
+  position: relative;
+
+  margin-right: 20px;
+}
+
+.breadcrumbs li::after {
+  content: "»";
+  position: absolute;
+  top: 5px;
+  right: -12px;
+
+  width: 6px;
+  height: 6px;
+
+  font-size: 15px;
+  line-height: 5px;
+}
+
+.breadcrumbs li:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs-current::after {
+  display: none;
 }
 
 .filters {
@@ -927,6 +957,8 @@ textarea:focus {
 }
 
 .catalog-item {
+  position: relative;
+
   width: 267px;
   margin-right: 25px;
   margin-bottom: 40px;
@@ -936,12 +968,30 @@ textarea:focus {
   margin-right: 0;
 }
 
-.catalog-item:hover {
-  background-color: rgba(248, 247, 244, 0.2);
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.08);
+.catalog-item a {
+  position: relative;
+
+  display: block;
+}
+
+.catalog-item:hover a {
+  z-index: 15;
+}
+
+.catalog-item-image {
+  width: 267px;
+  height: 267px;
+  margin-bottom: 15px;
+  overflow: hidden;
+
+  border-radius: 100%;
 }
 
 .catalog-item-price {
+  position: absolute;
+  top: 210px;
+  left: 0;
+
   font-weight: 700;
   font-size: 30px;
   line-height: 45px;
@@ -967,12 +1017,34 @@ textarea:focus {
   color: #ffbc9e;
 }
 
-.quick-view-button {
+.catalog-item-btn {
+  position: absolute;
+  top: -5px;
+  left: -15px;
+  z-index: 10;
+
   display: none;
+  width: 100%;
+  height: 100%;
+  padding: 5px 15px 70px;
+
+  background-color: rgba(248, 247, 244, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.08);
 }
 
-.catalog-item:hover .quick-view-button {
-  display: inline-block;
+.catalog-item-btn .button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.catalog-item:hover .catalog-item-btn {
+  display: block;
 }
 
 .pagination-list {
