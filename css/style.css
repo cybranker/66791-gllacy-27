@@ -96,11 +96,14 @@ textarea:focus {
   text-align: center;
   color: #ffffff;
   text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 
-  background-image: linear-gradient(0deg, #e74a35, #f26843);
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border: none;
   border-radius: 20px;
-  box-shadow: 0 2px 2px rgba(85, 8, 0, 0.54);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  cursor: pointer;
 }
 
 .button:hover,
@@ -109,22 +112,18 @@ textarea:focus {
 .button-form:focus {
   color: #ffffff;
 
-  background-image: linear-gradient(0deg, #f58669, #ec6f5e);
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   outline: none;
-  box-shadow: 0 2px 2px #ac1000;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .button:active,
 .button-form:active {
   color: #fceeec;
 
-  background-image: linear-gradient(0deg, #e74a35, #f26843);
-  box-shadow: inset 0 2px 2px #942718;
-}
-
-.button-big {
-  font-size: 32px;
-  line-height: 44px;
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  outline: none;
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .modal a {
@@ -296,6 +295,7 @@ textarea:focus {
   line-height: 16px;
   color: #ffffff;
   text-decoration: none;
+  text-shadow: none;
 
   background-color: rgba(255, 255, 255, 0.2);
   background-image: none;
@@ -580,22 +580,117 @@ textarea:focus {
   color: #ffffff;
 }
 
-.slider {
-  margin-bottom: 40px;
+.site-wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/slide-1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
-.slider-slides {
+.site-wrapper::before,
+.site-wrapper::after {
+  content: "";
+
+  visibility: hidden;
+}
+
+.site-wrapper::before {
+  background-image: url("../img/slide-2.png");
+}
+
+.site-wrapper::after {
+  background-image: url("../img/slide-3.png");
+}
+
+.slider {
+  position: relative;
+
+  margin-bottom: 40px;
+  padding-top: 280px;
+
+  text-align: center;
+}
+
+.slider-list {
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.slider-slides h3 {
+.slide {
+  display: none;
+}
+
+.slide-title {
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+
   font-weight: 700;
   font-size: 60px;
   line-height: 60px;
   color: #ffffff;
+}
+
+.slide-button {
+  padding: 10px 40px;
+
+  font-size: 32px;
+  line-height: 44px;
+
+  border-radius: 50px;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+
+  font-size: 0;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#product-1:checked ~ .site-wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/slide-1.png");
+}
+
+#product-2:checked ~ .site-wrapper {
+  background-color: #8996a6;
+  background-image: url("../img/slide-2.png");
+}
+
+#product-3:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+  background-image: url("../img/slide-3.png");
+}
+
+#product-1:checked ~ .site-wrapper #slide-1,
+#product-2:checked ~ .site-wrapper #slide-2,
+#product-3:checked ~ .site-wrapper #slide-3 {
+  display: block;
+}
+
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"] {
+  background-color: #ffffff;
 }
 
 .special-offers {
@@ -1000,7 +1095,7 @@ textarea:focus {
   margin-bottom: 15px;
   overflow: hidden;
 
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 .catalog-item-price {
@@ -1117,10 +1212,11 @@ textarea:focus {
 
 .inner-page-footer .container::before {
   content: "";
-  flex-basis: 100%;
-  flex-grow: 1;
   position: relative;
   top: -6px;
+
+  flex-grow: 1;
+  flex-basis: 100%;
 
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -1272,7 +1368,7 @@ textarea:focus {
   position: fixed;
   top: 340px;
   left: 50%;
-  display: block;
+
   box-sizing: border-box;
   width: 475px;
   padding: 24px;
