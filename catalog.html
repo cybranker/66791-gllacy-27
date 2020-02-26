@@ -78,6 +78,7 @@
                 <col class="column-2">
                 <col class="column-3">
                 <col class="column-4">
+                <col class="column-5">
                 <tr class="basket-item">
                   <td><button class="basket-item-delete" type="button"><span class="visually-hidden">Удалить</span></button></td>
                   <td>
@@ -133,34 +134,39 @@
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
           <p class="sorting-filter">
             <label>
-              Сортировка:<br>
+              <span class="filter-title">Сортировка:</span>
               <select name="sorting">
                 <option value="popular">по популярности</option>
-                <option value="new">по новинкам</option>
+                <option value="inexpensive">сначала недорогие</option>
+                <option value="expensive">сначала дорогие</option>
+                <option value="fat">по жирности</option>
               </select>
             </label>
           </p>
           <fieldset class="price-filter">
-            <legend>Цена:</legend>
-            <div class="range-slider">
-              <div>
-                <label>
-                  <input type="number" value="100" name="min"> руб.
+            <legend class="filter-title">
+              Цена:
+              <span class="price-controls">
+                <label class="min-price">
+                  <input type="text" value="100" name="min-price"> руб.
                 </label>
                 -
-                <label>
-                  <input type="number" value="500" name="max"> руб.
+                <label class="max-price">
+                  <input type="text" value="500" name="max-price"> руб.
                 </label>
-              </div>
+              </span>
+            </legend>
 
-              <div class="range-slider-track">
-                <div class="range-slider-pin range-slider-pin-min"></div>
-                <div class="range-slider-pin range-slider-pin-max"></div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" style="margin-left: 11%; width: 60%"></div>
               </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
             </div>
           </fieldset>
           <fieldset class="fat-filter">
-            <legend>Жирность:</legend>
+            <legend class="filter-title">Жирность:</legend>
             <ul>
               <li class="filter-option">
                 <label>
@@ -185,7 +191,7 @@
             </ul>
           </fieldset>
           <fieldset class="fillers-filter">
-            <legend>Наполнители:</legend>
+            <legend class="filter-title">Наполнители:</legend>
             <ul>
               <li class="filter-option">
                 <label>

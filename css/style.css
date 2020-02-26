@@ -728,6 +728,7 @@ textarea:focus {
 }
 
 .special-offer-text {
+  width: 100%;
   margin: 0;
   margin-bottom: 10px;
 
@@ -1010,6 +1011,8 @@ textarea:focus {
 
 .filters {
   margin-bottom: 40px;
+
+  outline: 1px solid yellow;
 }
 
 .filters fieldset {
@@ -1042,14 +1045,145 @@ textarea:focus {
   align-items: flex-start;
 }
 
+.filter-title {
+  display: block;
+  margin-bottom: 6px;
+  margin-left: 15px;
+}
+
 .sorting-filter {
-  width: 193px;
   margin: 0;
   margin-right: 15px;
 }
 
-.price-filter {
+.sorting-filter select[name="sorting"] {
+  box-sizing: border-box;
+  height: 35px;
+  padding: 8px 15px;
+  padding-right: 50px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: rgba(248, 247, 244, 0.2);
+  background-image: url("../img/select-arrow-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 92% 50%;
+  border: none;
+  border-radius: 20px;
+
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.sorting-filter select[name="sorting"]::-ms-expand {
+  display: none;
+}
+
+.sorting-filter select[name="sorting"]::before {
+  content: "";
+
+  background-image: url("../img/select-arrow-hover-icon.svg");
+  visibility: hidden;
+}
+
+.sorting-filter select[name="sorting"]:hover,
+.sorting-filter select[name="sorting"]:focus {
+  color: #323232;
+
+  background-image: url("../img/select-arrow-hover-icon.svg");
+  cursor: pointer;
+}
+
+.sorting-filter select[name="sorting"]:focus {
+  background-color: #ffffff;
+  outline: none;
+}
+
+.price-controls input {
+  width: 24px;
+  padding: 0;
+
+  font: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  box-shadow: none;
+}
+
+.price-controls input:hover,
+.price-controls input:focus {
+  box-shadow: none;
+}
+
+.range-controls {
+  position: relative;
+
+  box-sizing: border-box;
   width: 220px;
+  height: 35px;
+  padding: 15px 20px;
+
+  background-color: rgba(248, 247, 244, 0.2);
+  border-radius: 20px;
+}
+
+.range-controls .scale {
+  height: 4px;
+
+  background-color: rgba(248, 247, 244, 0.5);
+}
+
+.range-controls .bar {
+  width: 50%;
+  height: 4px;
+
+  background-color: #f8f7f4;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 8px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle:hover {
+  top: 6px;
+
+  border-width: 10px;
+}
+
+.range-controls .toggle-min {
+  left: 34px;
+}
+
+.range-controls .toggle-min:hover {
+  left: 32px;
+}
+
+.range-controls .toggle-max {
+  left: 132px;
+}
+
+.range-controls .toggle-max:hover {
+  left: 130px;
 }
 
 .fat-filter {
