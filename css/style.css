@@ -1287,8 +1287,8 @@ textarea:focus {
 
 .filter-button {
   box-sizing: border-box;
-  height: 35px;
   width: 174px;
+  height: 35px;
   margin-top: auto;
   padding: 6px 30px;
 
@@ -1304,6 +1304,7 @@ textarea:focus {
   background-color: rgba(255, 255, 255, 0.2);
   border: 2px solid #ffffff;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .filter-button:hover,
@@ -1326,6 +1327,7 @@ textarea:focus {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
 
   list-style: none;
@@ -1448,18 +1450,34 @@ textarea:focus {
 }
 
 .pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
 
   list-style: none;
 }
 
+.pagination-item {
+  margin: 0;
+}
+
 .pagination-item a {
+  display: block;
+  box-sizing: border-box;
+  width: 25px;
+  height: 25px;
+  padding: 4px 8px;
+
   font: inherit;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
   text-decoration: none;
+
+  border-radius: 50%;
 }
 
 .pagination-item a:hover,
@@ -1473,6 +1491,16 @@ textarea:focus {
   color: #323232;
 
   background-color: #ffffff;
+}
+
+.pagination-item-prev a,
+.pagination-item-next a {
+  display: flex;
+}
+
+.pagination-item-prev svg,
+.pagination-item-next svg {
+  margin: auto;
 }
 
 .pagination-item-disabled a {
