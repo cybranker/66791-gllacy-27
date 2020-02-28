@@ -417,10 +417,10 @@ textarea:focus {
 
 .main-search {
   position: relative;
-  padding-bottom: 5px;
 
   margin-right: 10px;
   margin-left: auto;
+  padding-bottom: 5px;
 }
 
 .modal-search,
@@ -492,6 +492,7 @@ textarea:focus {
 
 .main-basket {
   position: relative;
+
   padding-bottom: 5px;
 }
 
@@ -499,11 +500,11 @@ textarea:focus {
   position: absolute;
   top: 100%;
   right: 0;
+  z-index: 5;
 
   box-sizing: border-box;
   width: 540px;
   padding: 10px 15px 20px;
-  z-index: 5;
 }
 
 .main-basket:hover .modal-basket {
@@ -1319,6 +1320,7 @@ textarea:focus {
 
 .filter-input-radio:disabled + label,
 .filter-input-checkbox:disabled + label {
+  cursor: no-drop;
   opacity: 0.4;
 }
 
@@ -1397,8 +1399,6 @@ textarea:focus {
   width: 267px;
   margin-right: 25px;
   margin-bottom: 40px;
-
-  transition: all 0.3s ease;
 }
 
 .catalog-item:nth-child(4n) {
@@ -1409,6 +1409,7 @@ textarea:focus {
   position: relative;
 
   display: block;
+  transition: all 0s ease 0s;
 }
 
 .catalog-item:hover a {
@@ -1559,8 +1560,8 @@ textarea:focus {
 }
 
 .pagination-item-disabled a {
-  opacity: 0.2;
   cursor: no-drop;
+  opacity: 0.2;
 }
 
 .pagination-item-disabled a:hover,
