@@ -44,6 +44,8 @@ img {
 a {
   font: inherit;
   color: #ffffff;
+
+  transition: all 0.3s ease;
 }
 
 a:hover,
@@ -67,6 +69,8 @@ textarea {
   border: none;
   border-radius: 5px;
   box-shadow: 0 0 0 1px #b2b2b2;
+
+  transition: all 0.3s ease;
 }
 
 input[type="text"]:hover,
@@ -106,6 +110,8 @@ textarea:focus {
   border-radius: 20px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   cursor: pointer;
+
+  transition: all 0.3s ease;
 }
 
 .button:hover,
@@ -176,16 +182,20 @@ textarea:focus {
 
 .site-nav .site-nav-item {
   position: relative;
+
+  padding-bottom: 5px;
 }
 
 .site-nav-item > a {
+  display: block;
   margin-right: 2px;
   padding: 7px 14px;
 }
 
 .site-nav-item > a:hover,
 .site-nav-item > a:active,
-.site-nav-item > a:focus {
+.site-nav-item > a:focus,
+.modal-nav:hover + a {
   color: #323232;
   text-decoration: none;
 
@@ -212,12 +222,17 @@ textarea:focus {
 
 .site-nav .modal-nav {
   position: absolute;
-  top: 30px;
+  top: 100%;
   left: -5px;
+  z-index: 5;
 
   box-sizing: border-box;
   min-width: 145px;
   padding: 10px;
+}
+
+.site-nav-catalog-item {
+  transition: all 0.3s ease;
 }
 
 .site-nav-catalog-item:hover .modal-nav {
@@ -243,6 +258,8 @@ textarea:focus {
   color: #323232;
   text-decoration: none;
   white-space: nowrap;
+
+  transition: all 0.3s ease;
 }
 
 .modal-nav a:hover {
@@ -307,7 +324,10 @@ textarea:focus {
 }
 
 .main-header .button:hover,
-.main-header .button:focus {
+.main-header .button:focus,
+.modal-search:hover + .button,
+.modal-login:hover + .button,
+.modal-basket:hover + .button {
   color: #323232;
 
   background-color: #f8f7f4;
@@ -345,7 +365,10 @@ textarea:focus {
 }
 
 .main-header .search-button:hover::before,
-.main-header .search-button:focus::before {
+.main-header .search-button:focus::before,
+.modal-search:hover + .search-button::before,
+.modal-login:hover + .search-button::before,
+.modal-basket:hover + .search-button::before {
   background-position: -32px -35px;
 }
 
@@ -357,7 +380,10 @@ textarea:focus {
 }
 
 .login-button:hover::before,
-.login-button:focus::before {
+.login-button:focus::before,
+.modal-search:hover + .login-button::before,
+.modal-login:hover + .login-button::before,
+.modal-basket:hover + .login-button::before {
   background-position: -67px -34px;
 }
 
@@ -369,7 +395,10 @@ textarea:focus {
 }
 
 .basket-button:hover::before,
-.basket-button:focus::before {
+.basket-button:focus::before,
+.modal-search:hover + .basket-button::before,
+.modal-login:hover + .basket-button::before,
+.modal-basket:hover + .basket-button::before {
   background-position: -36px -5px;
 }
 
@@ -388,6 +417,7 @@ textarea:focus {
 
 .main-search {
   position: relative;
+  padding-bottom: 5px;
 
   margin-right: 10px;
   margin-left: auto;
@@ -396,8 +426,9 @@ textarea:focus {
 .modal-search,
 .modal-login {
   position: absolute;
-  top: 37px;
+  top: 100%;
   right: 0;
+  z-index: 5;
 
   box-sizing: border-box;
   padding: 20px 15px;
@@ -407,7 +438,7 @@ textarea:focus {
   width: 340px;
 }
 
-.search-button:hover + .modal-search {
+.main-search:hover .modal-search {
   display: block;
 }
 
@@ -417,11 +448,15 @@ textarea:focus {
   margin-right: 10px ;
 }
 
+.user-nav-item {
+  padding-bottom: 5px;
+}
+
 .modal-login {
   width: 280px;
 }
 
-.login-button:hover + .modal-login {
+.user-nav-item:hover .modal-login {
   display: block;
 }
 
@@ -457,19 +492,21 @@ textarea:focus {
 
 .main-basket {
   position: relative;
+  padding-bottom: 5px;
 }
 
 .modal-basket {
   position: absolute;
-  top: 37px;
+  top: 100%;
   right: 0;
 
   box-sizing: border-box;
   width: 540px;
   padding: 10px 15px 20px;
+  z-index: 5;
 }
 
-.basket-button:hover + .modal-basket {
+.main-basket:hover .modal-basket {
   display: block;
 }
 
@@ -1084,6 +1121,8 @@ textarea:focus {
   border: none;
   border-radius: 20px;
 
+  transition: all 0.3s ease;
+
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -1172,6 +1211,8 @@ textarea:focus {
   border: 8px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
+
+  transition: all 0.3s ease;
 }
 
 .range-controls .toggle:hover {
@@ -1215,6 +1256,8 @@ textarea:focus {
 
   cursor: pointer;
 
+  transition: all 0.3s ease;
+
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -1245,6 +1288,8 @@ textarea:focus {
   height: 22px;
 
   background-image: url("../img/radio-icon.png");
+
+  transition: all 0.3s ease;
 }
 
 .filter-input-checkbox + label::before {
@@ -1252,6 +1297,8 @@ textarea:focus {
   height: 20px;
 
   background-image: url("../img/checkbox-icon.png");
+
+  transition: all 0.3s ease;
 }
 
 .filter-input-radio + label:hover::before,
@@ -1305,6 +1352,8 @@ textarea:focus {
   border: 2px solid #ffffff;
   border-radius: 20px;
   cursor: pointer;
+
+  transition: all 0.3s ease;
 }
 
 .filter-button:hover,
@@ -1348,6 +1397,8 @@ textarea:focus {
   width: 267px;
   margin-right: 25px;
   margin-bottom: 40px;
+
+  transition: all 0.3s ease;
 }
 
 .catalog-item:nth-child(4n) {
@@ -1412,6 +1463,8 @@ textarea:focus {
   line-height: 22px;
   text-align: center;
   text-decoration: underline;
+
+  transition: all 0.3s ease;
 }
 
 .catalog-item-title:hover,
@@ -1478,6 +1531,8 @@ textarea:focus {
   text-decoration: none;
 
   border-radius: 50%;
+
+  transition: all 0.3s ease;
 }
 
 .pagination-item a:hover,
@@ -1582,6 +1637,8 @@ textarea:focus {
 
   border: 3px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
+
+  transition: all 0.3s ease;
 }
 
 .social-button svg {

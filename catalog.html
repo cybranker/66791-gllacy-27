@@ -30,10 +30,6 @@
             </ul>
           </nav>
           <div class="main-search">
-            <button class="button search-button" type="button">
-              <span class="visually-hidden">Поиск</span>
-            </button>
-
             <section class="modal modal-search">
               <h2 class="visually-hidden">Поиск</h2>
               <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
@@ -41,11 +37,13 @@
                 <input id="search-input" type="text" name="search" placeholder="Крем-брюле">
               </form>
             </section>
+
+            <button class="button search-button" type="button">
+              <span class="visually-hidden">Поиск</span>
+            </button>
           </div>
           <ul class="user-nav">
-            <li>
-              <a class="button login-button" href="login.html">Вход</a>
-
+            <li class="user-nav-item">
               <section class="modal modal-login">
                 <h2 class="visually-hidden">Личный кабинет</h2>
                 <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
@@ -66,11 +64,11 @@
                   </div>
                 </form>
               </section>
+
+              <a class="button login-button" href="login.html">Вход</a>
             </li>
           </ul>
           <div class="main-basket">
-            <a class="button basket-button" href="basket.html">2 товара</a>
-
             <section class="modal modal-basket">
               <h2 class="visually-hidden">Корзина</h2>
               <table class="modal-basket-table">
@@ -107,6 +105,8 @@
               </table>
               <p class="basket-button-wrapper"><a class="button-form" href="#">Оформить заказ</a></p>
             </section>
+
+            <a class="button basket-button" href="basket.html">2 товара</a>
           </div>
         </div>
 
