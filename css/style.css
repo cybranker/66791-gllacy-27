@@ -1560,6 +1560,7 @@ textarea:focus {
 
 .pagination-item-disabled a {
   opacity: 0.2;
+  cursor: no-drop;
 }
 
 .pagination-item-disabled a:hover,
