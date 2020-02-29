@@ -944,20 +944,24 @@ textarea:focus {
 
 .map {
   position: relative;
-
   height: 430px;
   overflow: hidden;
 }
 
 .map img {
   width: 100%;
+  position: absolute;
+}
+
+.map .container {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  align-items: center;
 }
 
 .map-address {
-  position: absolute;
-  top: 50%;
-  right: 2%;
-
+  position: relative;
   box-sizing: border-box;
   width: 300px;
   padding: 30px 25px;
@@ -967,8 +971,7 @@ textarea:focus {
 
   background-color: #ffffff;
   border-radius: 15px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  z-index: 5;
 }
 
 .map-text {
