@@ -18,6 +18,10 @@ body {
   padding: 0 27px;
 }
 
+.inner-page main.container {
+  margin-top: -20px;
+}
+
 .modal {
   display: none;
 }
@@ -147,14 +151,13 @@ textarea:focus {
 .main-navigation-wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
   padding-top: 10px;
 }
 
 .main-header-logo {
   width: 154px;
   height: 64px;
-  margin-right: 25px;
+  margin-right: 8px;
 }
 
 .main-nav {
@@ -647,8 +650,8 @@ textarea:focus {
 .slider {
   position: relative;
 
-  margin-bottom: 40px;
-  padding-top: 280px;
+  margin-bottom: 42px;
+  padding-top: 274px;
 
   text-align: center;
 }
@@ -667,7 +670,7 @@ textarea:focus {
 .slide-title {
   width: 700px;
   margin: 0 auto;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 
   font-weight: 700;
   font-size: 60px;
@@ -686,7 +689,7 @@ textarea:focus {
 
 .slider-controls {
   position: absolute;
-  bottom: 25px;
+  bottom: 20px;
   left: 0;
 
   font-size: 0;
@@ -790,13 +793,17 @@ textarea:focus {
 
 .special-offer .button {
   margin-top: auto;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   margin-left: auto;
+}
+
+.bestsellers .catalog-item {
+  margin-bottom: 0;
 }
 
 .features {
   margin-bottom: 40px;
-  padding: 27px 20px 15px;
+  padding: 22px 20px 15px;
 
   color: #323232;
 
@@ -809,7 +816,7 @@ textarea:focus {
 
 .features-text {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 
   font-weight: 500;
   font-size: 24px;
@@ -828,10 +835,10 @@ textarea:focus {
 
 .feature-item {
   box-sizing: border-box;
-  width: 535px;
-  margin-bottom: 12px;
-  padding-top: 15px;
-  padding-left: 55px;
+  width: 540px;
+  margin-bottom: 8px;
+  padding-top: 14px;
+  padding-left: 58px;
 
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -884,7 +891,7 @@ textarea:focus {
 }
 
 .blog-item {
-  margin: 10px 0;
+  margin: 4px 0;
   padding-right: 230px;
 }
 
@@ -928,7 +935,7 @@ textarea:focus {
 
 .subscription-wrap > p {
   margin-top: 5px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .subscription-form {
@@ -985,6 +992,10 @@ textarea:focus {
   line-height: 20px;
 }
 
+.map-text span {
+  display: block;
+}
+
 .map-contacts {
   font-weight: 700;
   font-size: 18px;
@@ -1000,7 +1011,7 @@ textarea:focus {
 
 .page-title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   padding: 0;
 
   font-weight: 700;
@@ -1013,7 +1024,7 @@ textarea:focus {
   flex-wrap: wrap;
   justify-content: flex-start;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   padding: 0;
 
   list-style: none;
@@ -1114,7 +1125,7 @@ textarea:focus {
   box-sizing: border-box;
   height: 35px;
   padding: 8px 15px;
-  padding-right: 50px;
+  padding-right: 35px;
 
   font-weight: 500;
   font-size: 16px;
@@ -1247,8 +1258,12 @@ textarea:focus {
 .filter-option {
   position: relative;
 
-  margin-right: 20px;
+  margin-right: 22px;
   padding-left: 32px;
+}
+
+.fat-filter .filter-option {
+  margin-right: 16px;
 }
 
 .filter-option:last-child {
@@ -1342,10 +1357,10 @@ textarea:focus {
 
 .filter-button {
   box-sizing: border-box;
-  width: 174px;
+  width: 144px;
   height: 35px;
   margin-top: auto;
-  padding: 6px 30px;
+  padding: 5px 30px;
 
   font: inherit;
   font-weight: 500;
@@ -1384,7 +1399,7 @@ textarea:focus {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
   padding: 0;
 
   list-style: none;
@@ -1404,7 +1419,7 @@ textarea:focus {
 
   width: 267px;
   margin-right: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 .catalog-item:nth-child(4n) {
@@ -1442,7 +1457,7 @@ textarea:focus {
 .catalog-item-image {
   width: 267px;
   height: 267px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   overflow: hidden;
 
   border-radius: 50%;
@@ -1515,7 +1530,7 @@ textarea:focus {
   flex-wrap: wrap;
   justify-content: flex-end;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding: 0;
 
   list-style: none;
@@ -1523,6 +1538,11 @@ textarea:focus {
 
 .pagination-item {
   margin: 0;
+  margin-right: 2px;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
 }
 
 .pagination-item a {
@@ -1579,7 +1599,7 @@ textarea:focus {
 }
 
 .main-footer {
-  padding: 17px 0;
+  padding: 5px 0 15px;
 }
 
 .main-footer .container {
@@ -1594,7 +1614,7 @@ textarea:focus {
 .inner-page-footer .container::before {
   content: "";
   position: relative;
-  top: -6px;
+  top: -5px;
 
   flex-grow: 1;
   flex-basis: 100%;
@@ -1624,13 +1644,13 @@ textarea:focus {
 .main-footer .footer-social {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   width: 267px;
-  margin-right: 130px;
+  margin-top: 30px;
+  margin-right: 135px;
 }
 
 .footer-social li {
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 .footer-social li:last-child {
@@ -1672,11 +1692,13 @@ textarea:focus {
   opacity: 0.9;
 }
 
-.footer-about {
+.main-footer .footer-about {
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
+  align-content: flex-start;
+  align-items: stretch;
   width: 350px;
+  margin-top: 26px;
 }
 
 .footer-about li {
@@ -1684,7 +1706,6 @@ textarea:focus {
 
   box-sizing: border-box;
   width: 145px;
-  margin-bottom: 5px;
   padding-left: 20px;
 }
 
