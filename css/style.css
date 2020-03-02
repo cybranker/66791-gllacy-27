@@ -1355,6 +1355,12 @@ textarea:focus {
   opacity: 0.8;
 }
 
+.filter-input-radio:focus + label::before,
+.filter-input-checkbox:focus + label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
 .filter-button {
   box-sizing: border-box;
   width: 144px;
