@@ -22,6 +22,7 @@ try {
 
 feedbackBtn.addEventListener('click', function(evt) {
   evt.preventDefault();
+  modalFeedback.classList.remove('modal-out');
   overlay.style.display = 'block';
   modalFeedback.classList.add('modal-show');
 
@@ -40,9 +41,12 @@ feedbackBtn.addEventListener('click', function(evt) {
 
 closeFeedback.addEventListener('click', function(evt) {
   evt.preventDefault();
-  modalFeedback.classList.remove('modal-show');
-  modalFeedback.classList.remove("modal-error");
-  overlay.style.display = '';
+  modalFeedback.classList.add('modal-out');
+  setTimeout(function() {
+    modalFeedback.classList.remove('modal-show');
+    modalFeedback.classList.remove("modal-error");
+    overlay.style.display = '';
+  }, 600);
 });
 
 formFeedback.addEventListener('submit', function(evt) {
@@ -64,9 +68,12 @@ window.addEventListener('keydown', function(evt) {
   if (evt.keyCode === 27) {
     if (modalFeedback.classList.contains('modal-show')) {
       evt.preventDefault();
-      modalFeedback.classList.remove('modal-show');
-      modalFeedback.classList.remove('modal-error');
-      overlay.style.display = '';
+      modalFeedback.classList.add('modal-out');
+      setTimeout(function() {
+        modalFeedback.classList.remove('modal-show');
+        modalFeedback.classList.remove("modal-error");
+        overlay.style.display = '';
+      }, 600);
     }
   }
 });
