@@ -961,8 +961,9 @@ textarea:focus {
 
 .map iframe {
   position: absolute;
-  width: 100%;
   z-index: 10;
+
+  width: 100%;
 
   border: none;
 }
@@ -1867,7 +1868,7 @@ textarea:focus {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 25;
 
   display: none;
   width: 100%;
@@ -1910,7 +1911,7 @@ textarea:focus {
   position: fixed;
   top: 50%;
   left: 50%;
-  z-index: 15;
+  z-index: 25;
 
   box-sizing: border-box;
   width: 475px;
