@@ -266,11 +266,15 @@ textarea:focus {
 }
 
 .modal-nav a:hover {
+  color: #323232;
+
   background-color: #fbded7;
 }
 
 .modal-nav a:active,
 .modal-nav a:focus {
+  color: #323232;
+
   background-color: #f6b5a5;
   outline: none;
 }
@@ -292,6 +296,8 @@ textarea:focus {
 .modal-nav-title a:hover,
 .modal-nav-title a:focus,
 .modal-nav-title a:active {
+  color: #e84d37;
+
   background-color: transparent;
 }
 
@@ -709,6 +715,12 @@ textarea:focus {
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.slider-controls label:hover {
+  background-color: rgba(248, 247, 244, 0.4);
 }
 
 #product-1:checked ~ .site-wrapper {
@@ -734,7 +746,8 @@ textarea:focus {
 
 #product-1:checked ~ .site-wrapper label[for="product-1"],
 #product-2:checked ~ .site-wrapper label[for="product-2"],
-#product-3:checked ~ .site-wrapper label[for="product-3"] {
+#product-3:checked ~ .site-wrapper label[for="product-3"],
+.slider-controls label:active {
   background-color: #ffffff;
 }
 
@@ -1589,7 +1602,8 @@ textarea:focus {
 
 .pagination-item-current a,
 .pagination-item-current a:hover,
-.pagination-item-current a:focus {
+.pagination-item-current a:focus,
+.pagination-item a:active {
   color: #323232;
 
   background-color: #ffffff;
@@ -1605,16 +1619,25 @@ textarea:focus {
   margin: auto;
 }
 
+.pagination-item a:active path {
+  fill: #323232;
+}
+
 .pagination-item-disabled a {
   cursor: no-drop;
   opacity: 0.2;
 }
 
 .pagination-item-disabled a:hover,
-.pagination-item-disabled a:focus {
+.pagination-item-disabled a:focus,
+.pagination-item-disabled a:active {
   color: #ffffff;
 
   background-color: transparent;
+}
+
+.pagination-item-disabled a:active path {
+  fill: #ffffff;
 }
 
 .main-footer {
@@ -1816,14 +1839,14 @@ textarea:focus {
             transform: scale(0.95);
   }
   50% {
-    opacity: 1;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
+    opacity: 1;
   }
   100% {
-    opacity: 0;
     -webkit-transform: scale(0.3);
             transform: scale(0.3);
+    opacity: 0;
   }
 }
 
@@ -1837,14 +1860,14 @@ textarea:focus {
             transform: scale(0.95);
   }
   50% {
-    opacity: 1;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
+    opacity: 1;
   }
   100% {
-    opacity: 0;
     -webkit-transform: scale(0.3);
             transform: scale(0.3);
+    opacity: 0;
   }
 }
 
